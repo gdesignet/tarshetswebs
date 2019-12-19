@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tarjetas Web - Tarjetas de presentacion digitales</title>
+    <meta name="description" content="Ahora tu tarjeta de presentación es digital, editable, y está siempre contigo y con tus clientes." />
+    <meta name="keywords" content="Tarjetas de presentación, Tarjetas digitales, Márketing, Presencia web, Santa Fe, Argentina" />
+    <meta property="og:description" name="og:description" content="TarjetasWeb. Estamos desarrollando el futuro, conectando empresas, uniendo personas.">
+    <meta property="og:image" name="og:image" content="asset/images/logo.png">
+    <link rel="icon" type="image/png" href="asset/images/logo.png">
+    <!-- VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- REQUIRED STYLES-->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="asset/js/extjs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="asset/font/flaticon.css">
+    <script src="https://use.fontawesome.com/09df7ca5c1.js"></script>
+
+    <script src="asset/js/extjs/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    
+      /* funcion de scroll suavizado */
+      $(document).on('click', '.link-menu', function(event){
+        event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      });
+
+    </script>
+
+  </head>
+  <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=1341032375907867";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- INICIO DE NAV-->
+
+    <!-- <div id="tw-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"><img src="asset/images/tarjetas-web-logo.png" alt="Tarjetas Web" class="logo">
+            <nav class="menu visible-md visible-lg">
+              <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tarjeta-muestras">Muestras</a></li>
+                <li><a href="#home">Mi Tarjeta</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tw-space"></div> -->
+
+    <!-- nav prueba -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="asset/images/tarjetas-web-logo.png" alt="Tarjetas Web" class="logo">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="link-menu" href="#inicio">Inicio</a></li>
+            <li><a class="link-menu" href="#muestras">Muestras</a></li>
+            <li><a class="link-menu" href="#prestaciones">Prestaciones</a></li>
+            <li><a class="link-menu" href="#mitarjeta">Mi tarjeta</a></li>
+            <li><a class="link-menu btn-clientes" onclick="location.href='https://admin.contacto.info/'">Área de Clientes</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- INICIO DE SLIDER-->
+    <header>
+      <div id="tw-slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="home" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="asset/images/tarjeta-de-presentacion-movil.jpg">
+                    <div data-swiper-parallax="-600" class="slider-title">
+                      <h2>MOVIL</h2>
+                      <p>Tu tarjeta de presentación siempre contigo y con tus clientes. No importa donde estés, tu Tarjeta Digital siempre estará en tu dispositivo móvil y el de tus clientes.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><img src="asset/images/tw-tarjeta-de-presentacion-social2.jpg">
+                    <div data-swiper-parallax="-600" class="slider-title">
+                      <h2>SOCIAL</h2>
+                      <p>Ahora tus clientes pueden compartir tu tarjeta de presentación en sus redes sociales con todos sus contactos en segundos.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><img src="asset/images/tw-tarjeta-de-presentacion-disponible-24x7x365.jpg">
+                    <div data-swiper-parallax="-600" class="slider-title fwhite">
+                      <h2>DISPONIBLE 24x7x365</h2>
+                      <p>Tu tarjeta personal ya no duerme en un cajón, ahora está disponible las 24 horas del día, los 7 días de la semana, los 365 días del año, en los principales buscadores de internet.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><img src="asset/images/tw-tarjeta-de-presentacion-editables.jpg">
+                    <div data-swiper-parallax="-600" class="slider-title">
+                      <h2>EDITABLES</h2>
+                      <p>Ahora tu tarjeta de presentación es editable, modifícala en segundos desde tu dispositivo móvil u ordenador personal y tus clientes tendrán tu información actualizada al instante.</p>
+                      <p class="hidden-xs">No necesitas volver a imprimir tu tarjeta de papel para volver a repartirla porque cambiaste tu teléfono o dirección.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                Add Pagination
+                <div class="swiper-pagination"></div>
+                Add Arrows
+                -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- FIN DE SLIDER-->
+    <div id="inicio"></div>
+    <section id="tarjeta-digital" class="text-em">
+      <div class="container">
+
+        <div class="row tarjeta-primer-muestra">
+
+          <div class="
+          col-lg-3 col-lg-offset-0 
+          col-md-3 col-md-offset-0 
+          col-sm-12 col-sm-offset-0 
+          col-xs-12 col-xs-offset-0 imagen">
+            <img class="muestra-img" src="asset/images/img0.5.jpg">
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 texto">
+            <h2 class="title text-center wow fadeIn">Tu nueva tarjeta de presentación</h2>
+            <p class="text-center wow fadeIn">Las tarjetas de presentación son esenciales en cualquier área de negocio. Sin embargo, actualmente el 88% de las tarjetas de visita tradicionales van a parar a la basura.</p>
+            <p class="text-center">La tarjeta de presentación que logra el exito es aquella que se adapta a la forma de interactuar de las personas con la información.</p>
+            
+            <div class="iconos">
+              <div>
+                <div><img class="icon" src="asset/images/check.svg"></div>
+                <h5>Fácil de usar</h5>
+              </div>
+
+              <div>
+                <div><img class="icon" src="asset/images/share.svg"></div>
+                <h5>Entrega viral</h5>
+              </div>
+
+              <div>
+                <div><img class="icon" src="asset/images/devices.svg"></i></div>
+                <h5>Para todos los dispositivos</h5>
+              </div>
+
+              <div>
+                <div><img class="icon" src="asset/images/cursor.svg"></i></div>
+                <h5>Diseño interactivo</h5>
+              </div>
+
+              <div>
+                <div><img class="icon" src="asset/images/classroom.svg"></i></div>
+                <h5>Ideal para congresos, reuniones y entrevistas</h5>
+              </div>
+
+              <div>
+                <div><img class="icon" src="asset/images/update3.svg"></i></div>
+                <h5>Tus datos siempre actualizados</h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="tarjeta-muestras" class="text-em">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title text-center fwhite wow fadeIn">Tarjeta de Presentación Digital</h2>
+              <p class="text-center wow fadeIn fwhite">La velocidad al transmitir la información hace la diferencia. Ahora podés repartir tu tarjeta de presentación a la velocidad de la luz, dejando lejos a las tarjetas de papel de la competencia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div id="tw-triangulo"></div>-->
+      <div id="muestras"></div>
+      <div id="tarjeta-plantillas" style="background: url(asset/images/tw-fondo-page1.jpg);" class="wow fadeIn text-em">
+        <!--<div class="rombo"></div>-->
+        <div class="container">
+          <div class="divmuestras">
+            <div class="row">
+              <div class="swiper-container-muestras col-lg-4 col-lg-push-0 col-md-4 col-md-push-1 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1">
+                
+                <div class="cabecera-muestra">Ejemplos</div>
+
+
+
+
+
+
+
+
+
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                    <img src="asset/images/muestras/m1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m4.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m5.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m6.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m7.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide-muestras">
+                    <a  data-toggle="modal" data-target="#exampleModalCenter">
+                      <img src="asset/images/muestras/m8.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title center" id="exampleModalCenterTitle">Ejemplos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body imagen">
+                        <img src="asset/images/muestras/m1.jpg" class="widthsd"  alt="">
+
+                        <img src="asset/images/muestras/m2.jpg" class="widthsd" alt="">
+  
+                        <img src="asset/images/muestras/m3.jpg" class="widthsd" alt="">
+  
+                        <img src="asset/images/muestras/m4.jpg" class="widthsd" alt="">
+  
+                        <img src="asset/images/muestras/m5.jpg" class="widthsd" alt="">
+  
+                        <img src="asset/images/muestras/m6.jpg" class="widthsd" alt="">
+  
+                        <img src="asset/images/muestras/m8.jpg" class="widthsd" alt="">
+  
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" style="width:100%; border-radius: 3px;" class="btn btn-primary center" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination-muestras"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div class="muestra col-lg-7 col-lg-push-1 col-md-5 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1">
+                <div class="cabecera-muestra">Vídeo explicativo</div>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/z2ObOgAC9vI?t=14s&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-push-2 col-sm-8 comparte">
+                Comparte TarjetasWeb en 
+
+                  <a class="button-compartir twitter" 
+                  href="http://twitter.com/share?text=Tarjetas%20Web%20-%20Tarjetas%20de%20presentación%20digitales:%20https://tarjetasweb.com.ar"
+                  target="_blank">
+                    <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>Twitter
+                  </a>
+                  <script>
+                    $('.comparte .twitter').click(function(event) {  
+                          url    = this.href,  
+                          opts   = 'status=1';
+                      window.open(url, 'twitter', opts);  
+                      return false;  
+                    });
+                  </script>
+
+                y en 
+                <a class="button-compartir facebook" 
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftarjetasweb.com.ar%2F&amp;src=sdkpreparse"
+                target="_blank"
+                >
+                  <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- prestaciones de la tarjeta -->
+    <section>
+      <div id="prestaciones"></div>
+      <div class="container prestaciones">
+        <div class="row final titulo">
+          <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Ahora podés tener:</span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 imagen">
+            <img src="asset/images/img2.jpg">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 texto">
+            <h3>Enlaces a tus redes sociales</h3>
+            <p>
+              Agrega a tu tarjeta los enlaces a tus redes sociales favoritas.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-push-6 col-md-push-6 col-lg-push-6 imagen">
+            <img src="asset/images/img3.jpg">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 texto">
+            <h3>Directo a la agenda</h3>
+            <p>
+              Quienes visiten tu tarjeta pueden agendarte en su teléfono tocando un botón.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 imagen">
+            <img src="asset/images/notebook.svg">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 texto">
+            <h3>Información de contacto</h3>
+            <p>
+              Tu información siempre actualizada. No más tarjetas obsoletas.
+            </p>
+          </div>
+        </div>
+
+        <div class="row final">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-push-6 col-md-push-6 col-lg-push-6 imagen">
+            <img src="asset/images/chat.svg">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 texto">
+            <h3>Contacto instantáneo</h3>
+            <p>
+              Cualquiera puede contactarse con vos directamente desde tu tarjeta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin prestaciones -->
+    <!-- app -->
+    
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fusion-copyright-content ">
+              <div class="fusion-copyright-notice pull-left">
+                <div>© Copyright &nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;&nbsp;&nbsp;
+                  |&nbsp;&nbsp;&nbsp; <a href="https://tarjetasweb.com.ar/">TarjetasWeb</a>&nbsp;&nbsp;&nbsp;
+                  |&nbsp;&nbsp;&nbsp;ventastarjetasweb@gmail.com&nbsp;&nbsp;&nbsp;
+                  |&nbsp;&nbsp;&nbsp;Todos los derechos reservados&nbsp;&nbsp;&nbsp;
+                </div>
+              </div>
+              <div class="fusion-social-links-footer pull-right">
+                <div class="fusion-social-networks">
+                  <div class="fusion-social-networks-wrapper">
+                    <section>
+                      <ul id='iconosSociales'>
+                        <li>
+                          <a href="https://www.facebook.com/tarjetasweb.com.ar" class="tfacebook" >
+                            <i class="fa fa-facebook-square  fa-2x" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/tarjetasweb.com.ar" class="tyoutube" >
+                            <i class="fa fa-youtube-square  fa-2x" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="btn-whatsapp">
+        <a href="https://wa.me/5216648031650?text=Estuve%20viendo%20la%20página%20web%20y%20quiero%20más%20información%20sobre%20la%20Tarjeta%20Web." target="_blank">
+          <img src="asset/images/WHATSAPP.svg" alt="">
+        </a>
+      </div>
+    </footer>
+
+    <script src="asset/js/extjs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="asset/js/extjs/swiper/js/swiper.min.js"></script>
+    <script src="asset/js/extjs/wow.min.js" type="text/javascript"></script>
+    <!-- Initialize Swiper-->
+
+
+    <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86840596-1', 'auto');
+      ga('send', 'pageview');
+
+    
+      $( ".previewtw" ).scroll(function(e) {
+      console.log( "<div>Handler for .scroll() called.</div>", e );
+      });
+      var wow = new WOW(
+      {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       true,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+      );
+      wow.init();
+
+    var swiperMuestras = new Swiper('.swiper-container-muestras', {
+        pagination: '.swiper-pagination-muestras',
+        slideClass: 'swiper-slide-muestras',
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 60,
+        centeredSlides: true,
+        autoplay: 10000,
+        speed:600,
+        parallax: true,
+        loop: true,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+    <!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAldBsvQoXa_3Y3Oiv5I4rXZ8slR_98KrU&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="http://52.72.172.164:8001/socket.io/socket.io.js"></script>
+    -->
+  </body>
+</html>

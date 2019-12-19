@@ -1,0 +1,1400 @@
+* {font-family: 'Roboto', sans-serif;}
+.serif {
+    font-family: 'Cormorant', serif;}
+/*MENU*/
+body {padding-top: 0px;}
+
+/* personalizaciÃ³n del menÃº de bootstrap */
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-toggle {
+    outline: none;
+}
+
+.navbar {
+    max-height: 60px;
+    margin-bottom: 0;
+
+}
+
+/* fin navbar */
+
+#tw-slider {
+        margin-top: 60px;
+    }
+
+#tw-menu, .navbar { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255,255,255,.95);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#tw-space{
+    padding-top: 60px;
+    width: 100%;
+}
+
+.btn-clientes {
+    color: white !important;
+    background-color: #a0ce4e !important;
+    cursor: pointer !important;
+}
+
+.btn-clientes:hover {
+    background-color: #b5e858 !important;
+}
+
+@media (max-width: 767px) {
+
+    #tw-menu .logo {
+        margin-top: 12px;
+        margin-left: 20px;
+        height: 25px;
+    }
+
+    .navbar-brand .logo {
+        margin-top: 12px;
+        margin-left: 20px;
+        height: 25px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+
+    #tw-menu .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 18px;
+    }
+
+    .navbar-brand .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 18px;
+    }
+
+}
+@media (min-width: 951px) {
+    #tw-menu .logo {
+        margin-top: 12px;
+        margin-left: 20px;
+        height: 36px;
+    }
+
+    .navbar-brand .logo {
+        margin-top: 12px;
+        margin-left: 20px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    #tw-menu {height: 60px;}
+
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.7rem;
+
+    }
+
+    .navbar-nav > li > a:hover {
+        color: #a0ce4e;
+        border-top: #a0ce4e 4px solid;
+        text-decoration:none;
+        padding-top: 16px;
+    }
+
+    .btn-clientes {
+        color: white !important;
+        background-color: #a0ce4e !important;
+        cursor: pointer !important;
+        height: 59px !important;
+    }
+    .btn-clientes:hover {
+        background-color: #b5e858 !important;
+    }
+}
+@media (max-width: 767px) {
+    
+    /* achicando navbar */
+    .navbar-collapse {
+        width: 150px;
+        float: right;
+        background-color: white;
+        margin-top: -1px;
+    }
+
+    .navbar-collapse a:hover {
+        color: #333;
+    }
+
+    #tw-menu {
+        height: 49px;
+    }
+
+    /* bootstrap navbar */
+   .navbar {
+        max-height: 49px;
+    }
+
+    #tw-slider {
+        margin-top: 49px;
+    }
+
+    #tw-space{
+    padding-top: 49px;
+    width: 100%;
+}
+
+}
+#tw-menu .menu {float: right;}
+#tw-menu .menu ul {
+    list-style: none; padding: 0; margin: 0;
+}
+#tw-menu .menu ul li{
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+#tw-menu .menu ul li a {
+    line-height: 55px;
+    font-family: 'Cormorant', serif;
+    height: 60px;
+    font-size: 20px;
+    color: #333;
+    display: block;
+}
+#tw-menu .menu ul li a:hover, #tw-menu .menu ul li a.active{
+    color: #a0ce4e;
+    border-top: #a0ce4e 2px solid;
+    text-decoration:none;
+}
+
+/*FIN MENU*/
+
+/* INICIO SLIDER*/
+#tw-slider {
+
+    background: url(../images/fondoslider.jpg);
+
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.swiper-container {
+        width: 100%;
+
+    padding-bottom: 1px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img {height: 100%; width: 100%;}
+    .slider-title {background-color: rgba(255,255,255,0.8);}
+.slider-title h2 {color: #262228; font-weight: 600; font-family: 'Cormorant', serif;}
+.slider-title p {color: #262228; }
+.slider-title.fwhite {background-color: rgba(0,0,0,0.5);}
+.slider-title.fwhite h2 {color: #ffffff;}
+.slider-title.fwhite p {color: #ffffff;}
+
+@media (min-width: 1202px) {
+    .swiper-container {
+        border-left: 5px solid rgba(255,255,255,0.5);
+        border-right: 5px solid rgba(255,255,255,0.5);
+    }
+}
+@media (min-width: 992px) {
+
+    #tw-slider, .swiper-container {
+        height: 550px;
+    }
+    .slider-title { 
+        position: absolute; 
+        bottom: 100px; left: 100px; 
+        background-color: rgba(255,255,255,0.5);
+        padding: 20px 40px;
+        
+        text-align: left;}
+    .slider-title h2 {
+       font-size: 30px;
+       line-height: 50px;
+       margin: 0 0 0px;
+    }
+    .slider-title p {
+        color: #747477; 
+        font-size: 17px;
+        line-height: 25px; 
+        max-width: 450px;
+    }
+}
+@media (max-width: 991px) {
+    #tw-slider, .swiper-container {
+        height: 450px;
+    }
+    .slider-title { 
+        position: absolute; 
+        bottom: 100px; left: 100px; 
+        background-color: rgba(255,255,255,0.5);
+        padding: 20px 40px;
+        
+        text-align: left;}
+    .slider-title h2 {
+       
+       font-size: 30px;
+       line-height: 50px;
+       margin: 0 0 0px;
+    }
+    .slider-title p {
+        color: #747477; 
+        font-size: 17px;
+        line-height: 25px; 
+        max-width: 450px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    #tw-slider, .swiper-container {
+        height: 350px;
+    }
+    .slider-title { 
+        position: absolute; 
+        bottom: 80px; left: 50px; 
+        
+        padding: 20px 40px;
+        
+        text-align: left;}
+    .slider-title h2 {
+       font-size: 25px;
+       line-height: 35px;
+       margin: 0 0 0px;
+        
+    }
+    .slider-title p {
+         
+        font-size: 15px;
+        line-height: 25px; 
+        max-width: 400px;
+    }
+}
+@media (max-width: 480px) {
+    #tw-slider, .swiper-container {
+        height: 210px;
+    }
+    .slider-title { 
+        position: absolute; 
+        bottom: 20px;
+        padding: 10px;
+        
+        text-align: left;}
+    .slider-title h2 {
+       font-size: 20px;
+       line-height: 20px;
+       margin: 0 0 10px;
+    }
+    .slider-title p {
+        font-size: 14px;
+        line-height: 16px; 
+        max-width: 230px;
+    }
+}
+/* FIN SLIDER*/
+
+/*INICIO PAGINA*/
+
+@media (min-width: 768px) {
+    .text-em {font-size: 30px;}
+}
+@media (max-width: 767px) {
+    .text-em {font-size: 20px;}
+}
+
+#tarjeta-digital p, #tarjeta-muestras p  {font-size: .6em; font-weight: 300; padding: 0 50px;}
+
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+    .text-em {font-size: 25px;}
+    #tarjeta-digital p, #tarjeta-muestras p  { padding: 0 20px;}
+}
+@media (max-width: 480px) {
+    .text-em {font-size: 25px;}
+    #tarjeta-digital p, #tarjeta-muestras p  { padding: 0 20px;}
+}
+h2.title {
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    padding: 30px 0 10px;
+    font-size: 1em;
+    /*font-family: 'Cinzel', serif;*/
+}
+#tarjeta-digital {padding-bottom: 50px;}
+h3.title {
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    padding: 0px 0 10px;
+    font-size: .8em;
+}
+
+#tarjeta-muestras {  padding-bottom: 50px;}
+
+
+
+#tarjeta-plantillas  {padding: 70px 0;  position: relative; }
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    /* padding-top:30px;*/
+    height:0;
+    overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.rombo {height: 40px; width: 40px;  transform: rotate(-45deg);  
+    left: 50%;
+    position: absolute; top:-21px;
+    margin-left: -20px;}
+.divmuestras {}
+.divmuestras .muestra { /* padding: 0 20px */}
+.divmuestras .muestra .card {background: #fff;}
+
+#tarjeta-creador { position: relative; padding-bottom: 30px;}
+.divcontructor {padding-top: 30px;}
+.divcontructor .nav-tabs {margin-right:0px;}
+.twpestanas {border-bottom: 1px solid #fff;}
+
+.twpestanas li a {border: none; color: #333; text-align: center; font-family: 'Cormorant', serif;}
+li.comprar a {color: #fff;}
+li.comprar:hover a {background: #fff; color:#a0ce4e;}
+.twpestanas li.active a, .twpestanas li.active a:hover, .twpestanas li.active a:focus {border: none; border-radius: 0; color: #a0ce4e;}
+.comprar {background: #a0ce4e;}
+
+@media (min-width: 768px) {
+    .twpestanas li {width: 33.3333%;}
+    .twpestanas li a {font-size: .8em; }
+    
+}
+@media (max-width: 767px) {
+    .twpestanas li {width: auto;}
+    .twpestanas li a {font-size: .8em; }
+}
+
+
+.iphoneparent { max-width: 400px; margin: 0 auto;}
+.iphone {width: 100%;}
+.previewtw {position: absolute; 
+    top: 17.7%;
+    width: 64%;
+    max-width: 256px;
+    left: 17.2%;
+    height: 63%;
+    overflow: hidden;
+}
+.previewtw iframe {
+    width: 106%;
+    height: 106%;}
+
+.creadordeweb {padding: 20px;  }
+.creadordeweb label {font-size: .5em}
+@media (min-width: 992px) {
+    .enlacepago {padding: 0 0 0 10%;}
+    .creadordeweb .form-group {padding-right:10px; }
+}
+@media (max-width: 991px) {
+    .enlacepago {padding: 0 0px;}
+    .creadordeweb .form-group {padding-right:0px; }
+}
+.datosdemo {
+    font-size: .4em;
+}
+.errorlabel {font-size: .4em; padding-top:5px; color:red;}
+.precio {/*background: #fff*/ padding: 20px; text-align: center;}
+.precio h4 {font-family: 'Cormorant', serif; font-size: .8em;}
+.precio h2{ color:#a0ce4e;}
+.precio p {font-size: .5em;}
+.terminolink {font-size: .5em;}
+.resultadopagar {padding: 10px 0;}
+.resultadopagar p {font-size: .5em; padding: 10px 0; }
+.distribuidor {background: #fff; padding: 0 10px 10px; float: left; margin-bottom: 20px;}
+.distribuidor h2 {font-size: .7em;}
+.distribuidor h3 {
+    float: left;
+    padding: 0 10px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    color: #fff;}
+
+.distribuidor .masinfo {width: 100%; float: left; background:#428bca; }
+.distribuidor .masinfo div { float: left;}
+.distribuidor .masinfo a {        padding: 0px 10px 0 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+    width: 70%;
+    /* vertical-align: middle; */
+    /* height: 100%; */
+    /* top: 50%; */
+    /* display: inline-block; */}
+.mediospago {    display: inline-block;}
+@media (min-width: 768px) {
+    .distribuidor p, .distribuidor a {font-size: .5em;}
+    .distribuidor h3 {font-size: 20px;}
+}
+@media (max-width: 767px) {
+    .distribuidor p, .distribuidor a {font-size: .5em;}
+    .distribuidor h3 {font-size: 20px;}
+    .mediospago {padding: 0 0px;}
+}
+.distribuidor .masinfo img {height: 60px; float: left;}
+
+.enlacepago .payment-methods-allowed {list-style: none; padding: 0; margin: 0;}
+.enlacepago .payment-methods-allowed li {display: inline-block; padding: 10px 0 0; }
+.fusion-copyright-notice {padding-top: 12px;}
+#iconosSociales {list-style: none; padding: 0; margin: 0;}
+#iconosSociales li { display: inline-block;}
+#iconosSociales li a {display: inline-block; padding: 10px; background: inherit; color: #fff;
+    border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border: 0px solid #000000; width: 40px; height: 40px; }
+
+#iconosSociales li a.tfacebook:hover {color: #3b5998;}
+#iconosSociales li a.tyoutube:hover {color: #bb0000;}
+#iconosSociales li a.ttwitter:hover {color: #55acee;}
+#iconosSociales li a.tgoogleplus:hover {color: #dd4b39;}
+#iconosSociales li a.tinstagram:hover {color: #125688;}
+#iconosSociales li a.tlinkedin:hover {color: #007bb5;}
+#iconosSociales li a.twhatsapp:hover {color: #5cbe4a;}
+#iconosSociales li a i { margin: -3px 0px 0 -2px;  }
+/*colores*/
+#footer {    background-color: #282a2b; color:#fff;
+
+    border-color: #4b4c4d;
+    border-top-width: 1px;
+    padding: 40px 20px;}
+#tarjeta-muestras, .rombo {background-color: #428bca;}
+#tarjeta-digital p{
+    color: #747474;    
+}
+#tarjeta-creador {background: #f6f6f6;}
+.fwhite { color: #fff; }
+
+/*entipo test*/
+
+/*ICONOS PAGOS*/
+
+[class*='paymentmethod'] {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 2px;
+    overflow: hidden;
+    text-indent: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Common Payment Methods to all Contries
+---------------------------------------------------------------*/
+
+.paymentmethod-account_money {
+    background-position: 0 0;
+}
+
+.paymentmethod-visa,
+.paymentmethod-debvisa,
+.paymentmethod-visa.paymentmethod-large,
+.paymentmethod-debvisa.paymentmethod-large   {
+    background-position: 0 -50px;
+}
+
+.paymentmethod-master,
+.paymentmethod-debmaster,
+.paymentmethod-master.paymentmethod-large,
+.paymentmethod-debmaster.paymentmethod-large  {
+    background-position: 0 -100px;
+}
+
+.paymentmethod-amex,
+.paymentmethod-amex.paymentmethod-large{
+    background-position: 0 -150px;
+}
+
+.paymentmethod-bitcoin,
+.paymentmethod-bitcoin.paymentmethod-large{
+    background-position: 0 -250px;
+}
+
+/* Sprite position for Argentina Logos
+---------------------------------------------------------------*/
+
+.paymentmethod-diners,
+.paymentmethod-diners.paymentmethod-large {
+    background-position: 0 -200px;
+}
+
+.paymentmethod-naranja,
+.paymentmethod-naranja.paymentmethod-large {
+    background-position: 0 -300px;
+}
+
+.paymentmethod-nativa,
+.paymentmethod-nativa.paymentmethod-large {
+    background-position: 0 -350px;
+}
+
+.paymentmethod-tarshop,
+.paymentmethod-tarshop.paymentmethod-large {
+    background-position: 0 -400px;
+}
+
+.paymentmethod-cencosud,
+.paymentmethod-cencosud.paymentmethod-large {
+    background-position: 0 -450px;
+}
+
+.paymentmethod-cabal,
+.paymentmethod-cabal.paymentmethod-large {
+    background-position: 0 -500px;
+}
+
+.paymentmethod-argencard,
+.paymentmethod-argencard.paymentmethod-large {
+    background-position: 0 -550px;
+}
+
+.paymentmethod-pagofacil,
+.paymentmethod-pagofacil.paymentmethod-large {
+    background-position: 0 -600px;
+}
+
+.paymentmethod-rapipago,
+.paymentmethod-rapipago.paymentmethod-large {
+    background-position: 0 -650px;
+}
+
+.paymentmethod-redlink,
+.paymentmethod-redlink.paymentmethod-large {
+    background-position: 0 -700px;
+}
+
+.paymentmethod-banelco,
+.paymentmethod-banelco.paymentmethod-large {
+    background-position: 0 -750px;
+}
+
+.paymentmethod-bapropagos,
+.paymentmethod-bapropagos.paymentmethod-large {
+    background-position: 0 -800px;
+}
+
+.paymentmethod-cargavirtual,
+.paymentmethod-cargavirtual.paymentmethod-large {
+    background-position: 0 -850px;
+}
+.paymentmethod-cordial,
+.paymentmethod-cordial.paymentmethod-large {
+    background-position: 0 -900px;
+}
+.paymentmethod-cmr,
+.paymentmethod-cmr.paymentmethod-large {
+    background-position: 0 -950px;
+}
+
+.paymentmethod-cordobesa,
+.paymentmethod-cordobesa.paymentmethod-large {
+    background-position: 0 -1000px;
+}
+
+.paymentmethod-mercadopago_cc,
+.paymentmethod-mercadopago_cc.paymentmethod-large {
+    background-position: 0 -1049px;
+}
+
+/* Argentina Sprite for Default Size
+---------------------------------------------------------------*/
+
+
+[class*='paymentmethod'] {
+    background-image: url('https://admin.contacto.info/admin/images/payment-methods-default.png');
+    height: 16px; /* most common height */
+}
+
+/*
+ * Retina logo for small screens
+ */
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+   [class*='paymentmethod'] {
+        background-image: url('https://admin.contacto.info/admin/images/payment-methods-default@2x.png');
+        background-size: 72px 1068px;  /* original x1 image size */
+        height: 16px;
+    }
+
+}
+
+/* Argentina Default Size
+---------------------------------------------------------------*/
+
+.paymentmethod-account_money {
+    height: 20px;
+    width: 72px;
+}
+
+.paymentmethod-visa {
+    width: 39px;
+}
+
+.paymentmethod-master {
+    height: 19px;
+    width: 29px;
+}
+
+.paymentmethod-amex {
+    height: 17px;
+    width: 17px;
+}
+
+.paymentmethod-diners {
+    height: 16px;
+    width: 62px;
+}
+
+.paymentmethod-bitcoin {
+    height: 16px;
+    width: 62px;
+}
+
+.paymentmethod-naranja {
+    height: 18px;
+    width: 16px;
+}
+
+.paymentmethod-nativa {
+    height: 15px;
+    width: 36px;
+}
+
+.paymentmethod-tarshop {
+    width: 27px;
+}
+
+.paymentmethod-cencosud {
+    height: 17px;
+    width: 26px;
+}
+
+.paymentmethod-cabal {
+    height: 17px;
+    width: 17px;
+}
+
+.paymentmethod-argencard {
+    height: 18px;
+    width: 17px;
+}
+
+.paymentmethod-pagofacil,
+.paymentmethod-redlink {
+    height: 20px;
+    width: 19px;
+}
+
+.paymentmethod-rapipago {
+    height: 11px;
+    width: 56px;
+}
+
+.paymentmethod-banelco {
+    width: 46px;
+}
+
+.paymentmethod-bapropagos {
+    width: 51px;
+}
+
+.paymentmethod-cargavirtual {
+    height: 20px;
+    width: 20px;
+}
+.paymentmethod-cordial {
+    height: 15px;
+    width: 39px;
+}
+.paymentmethod-cmr {
+    height: 19px;
+    width: 26px;
+}
+.paymentmethod-cordobesa {
+    height: 9px;
+    width: 40px;
+}
+.paymentmethod-mercadopago_cc {
+    height: 18px;
+    width: 28px;
+}
+/* Argentina Sprite for Large Size
+---------------------------------------------------------------*/
+
+
+.paymentmethod-large{
+    background-image: url('https://admin.contacto.info/admin/images/payment-methods-large.png');
+    height: 26px; /* most common height */
+    margin: 5px;
+}
+
+/*
+ * Retina logo for small screens
+ */
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+   .paymentmethod-large {
+        background-image: url('https://admin.contacto.info/admin/images/payment-methods-large@2x.png');
+        background-size: 117px 1074px;  /* original x1 image size */
+        height: 26px;
+        margin: 5px;
+    }
+
+}
+
+/* Argentina Large Size
+---------------------------------------------------------------*/
+
+.paymentmethod-account_money.paymentmethod-large {
+    height: 31px;
+    width: 116px;
+}
+
+.paymentmethod-visa.paymentmethod-large {
+    height: 21px;
+    width: 63px;
+}
+
+.paymentmethod-master.paymentmethod-large {
+    height: 29px;
+    width: 46px;
+}
+
+.paymentmethod-amex.paymentmethod-large {
+    height: 27px;
+    width: 26px;
+}
+
+.paymentmethod-diners.paymentmethod-large {
+    height: 25px;
+    width: 96px;
+}
+
+.paymentmethod-bitcoin.paymentmethod-large {
+    height: 25px;
+    width: 96px;
+}
+
+.paymentmethod-naranja.paymentmethod-large {
+    height: 29px;
+    width: 25px;
+}
+
+.paymentmethod-nativa.paymentmethod-large {
+    width: 58px;
+}
+
+.paymentmethod-tarshop.paymentmethod-large {
+    width: 42px;
+}
+
+.paymentmethod-cencosud.paymentmethod-large {
+    width: 41px;
+}
+
+.paymentmethod-cabal.paymentmethod-large {
+    width: 26px;
+}
+
+.paymentmethod-argencard.paymentmethod-large {
+    height: 28px;
+    width: 28px;
+}
+
+.paymentmethod-pagofacil.paymentmethod-large,
+.paymentmethod-redlink.paymentmethod-large {
+    height: 31px;
+    width: 31px;
+}
+
+.paymentmethod-rapipago.paymentmethod-large {
+    height: 16px;
+    width: 86px;
+}
+
+.paymentmethod-banelco.paymentmethod-large {
+    height: 25px;
+    width: 74px;
+}
+
+.paymentmethod-bapropagos.paymentmethod-large {
+    width: 82px;
+}
+
+.paymentmethod-cargavirtual.paymentmethod-large {
+    height: 32px;
+    width: 32px;
+}
+
+.paymentmethod-cordial.paymentmethod-large {
+    height: 22px;
+    width: 63px;
+}
+
+.paymentmethod-cmr.paymentmethod-large {
+    height: 30px;
+    width: 42px;
+}
+
+.paymentmethod-cordobesa.paymentmethod-large {
+    height: 25px;
+    width: 64px;
+}
+
+.paymentmethod-mercadopago_cc.paymentmethod-large {
+    height: 26px;
+    width: 36px;
+}
+
+/* diseÃ±o lucas */
+
+.twpestanas li a {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.iconos > div {
+    margin: 2% 0 0 0;
+    float: left;
+    vertical-align: middle;
+    width: 33.333%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+}
+
+@media (max-width: 767px) {
+
+    .iconos i {
+        color: #666;
+        font-size: 3.2rem;
+    }
+
+    .iconos .icon {
+        width: 40px;
+        height: auto;
+    }
+
+    .iconos h5 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        width: 100%;
+        line-height: 17px;
+        color: #555;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .iconos i {
+        color: #666;
+        font-size: 3.7rem;
+    }
+
+    .iconos .icon {
+        width: 50px;
+        height: auto;
+    }
+
+    .iconos h5 {
+        font-size: 1.7rem;
+        margin-top: 20px;
+        width: 100%;
+        line-height: 20px;
+        color: #555;
+    }
+}
+.modal-body{
+    background: #333;
+}
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+    border:5px black;
+}
+.widthsd{
+    width: 100%;
+}
+.modal-body>*{
+    margin: 10px auto;
+    border-radius: 2px;
+}
+@media (max-width: 991px) {
+
+    .tarjeta-primer-muestra .muestra-img {
+        text-align: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .tarjeta-primer-muestra .imagen {
+        text-align: center;
+    }
+
+        .tarjeta-primer-muestra {
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+    .tarjeta-primer-muestra .texto h2 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .tarjeta-primer-muestra p {
+        font-size: 1.5rem;
+    }
+
+    #tarjeta-digital {
+        padding-bottom: 0;
+        padding-top: 5%;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .tarjeta-primer-muestra {
+        display: flex;
+    }
+
+    .tarjeta-primer-muestra .muestra-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tarjeta-primer-muestra .imagen {
+        display: flex;
+        -ms-flex-align: end;
+        -webkit-box-align: end;
+        align-items: flex-end;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+
+
+    .tarjeta-primer-muestra .texto h2 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .tarjeta-primer-muestra p {
+        font-size: 2rem;
+    }
+
+    .tarjeta-primer-muestra .texto {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    #tarjeta-digital {
+        padding-bottom: 0;
+        padding-top: 3%;
+    }
+
+}
+
+/* prestaciones */
+
+
+
+.prestaciones .texto {
+    text-align: center;
+}
+
+.prestaciones p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.prestaciones .imagen {
+    text-align: center;
+}
+
+.prestaciones h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .prestaciones {
+        padding: 20px 0;
+    }
+
+    .prestaciones .row {
+        width: 98%;
+        margin: 0;
+        padding: 40px 0;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #aaa;
+    }
+
+    .prestaciones .titulo {
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        font-size: 2.5rem;
+        padding: 20px 0 00px 0;
+    }
+
+    .prestaciones img {
+        max-height: 75px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .prestaciones .final {
+        border: none;
+    }
+
+    .prestaciones h3 {
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+
+    .prestaciones .row {
+        margin: 0;
+        padding: 60px 0;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #aaa;
+    }
+
+    .prestaciones .titulo {
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        font-size: 3.5rem;
+        padding: 50px 0 5px 0;
+    }
+
+    .prestaciones img {
+        max-height: 100px;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .prestaciones .texto {
+        display: flex;
+        min-height: 100px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .prestaciones .texto h3 {
+        font-size: 2.5rem;
+        font-family: 'Cormorant', serif;
+        text-transform: uppercase;
+    }
+
+    .prestaciones .texto p {
+        font-size: 1.5rem;
+    }
+
+    .prestaciones .final {
+        border: none;
+    }
+
+}
+
+.separador {
+    border-top-style: solid;
+    border-top-color: #888;
+    border-top-width: 1px;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.mejor-precio {
+
+}
+
+.mejor-precio i {
+
+    background-color: #a0ce4e;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 2rem;
+    color: white;
+}
+
+.precio span {
+    padding: 5px 10px;
+    background-color: #90bd3d;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #76a51f;
+}
+
+.precio span i {
+    margin-right: 7px;
+}
+
+.precio h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.swiper-container-muestras {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.swiper-slide-muestras {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 200px;
+    overflow: hidden;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+    .swiper-slide-muestras img {
+        position: relative;
+        left: -4px;
+        width: 110%;
+        height: auto;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+    
+    .swiper-slide-muestras a:hover img {
+        -ms-transform: scale(1.15); /* IE 9 */
+        -webkit-transform: scale(1.15); /* Safari */
+        transform: scale(1.15);
+    }
+
+.swiper-slide-muestras:hover {
+    background-color: #aaa;
+}
+
+.swiper-pagination-muestras {
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+@media (min-width:992px) {
+
+    .divmuestras .muestra {
+        text-align: center;
+        position: relative;
+        top: -30%;
+        -ms-transform: translateY(30%);
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .divmuestras .muestra {
+        text-align: center;
+        position: relative;
+        top: -5%;
+        -ms-transform: translateY(5%);
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+    }
+}
+
+.cabecera-muestra {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: "Aller-light";
+    src: url(../font/Aller_Lt.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Aller-bold";
+    src: url(../font/Aller_Bd.ttf) format("truetype");
+}
+
+.app > div {
+    padding-top: 20px;
+}
+.app {
+    text-align: center;
+}
+
+.app h1 .primer {
+    font-family: "Aller-light";
+    font-weight: 300;
+    padding-left: 0;
+    color: white;
+}
+
+.app h1 .segundo {
+    font-family: "Aller-bold";
+    font-weight: 700;
+    padding-left: 0;
+    color: white;
+}
+
+.app img {
+    width: 100%;
+    height: auto;
+}
+
+.app .cont {
+    padding: 20px;
+}
+
+.comparte {
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+
+
+.comparte .twitter {
+    background-color: #60A9DE;
+}
+
+.comparte .facebook {
+    background-color: #3b5999;
+}
+
+.comparte .button-compartir {
+    margin: 0 7px;
+    padding: 10px;
+    padding-bottom: 14px;
+    border-radius: 5px;
+    box-shadow: inset 0 -.2em rgba(0,0,0,.3);
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    margin-top: 10px;
+    color: white;
+}
+
+.comparte .button-compartir i {
+    margin-right: 5px;
+    margin-left: -3px;
+}
+
+.comparte .facebook:hover {
+    background-color: #5E7DC1;
+}
+
+.comparte .twitter:hover {
+    background-color: #88bee6;
+}
+
+.precio-viejo {
+    color: #AAA;
+/*    text-decoration: line-through;*/
+}
